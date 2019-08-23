@@ -83,15 +83,17 @@ a {
     box-sizing: border-box;
     box-shadow: 0 -3px 3px 0 darkslategrey, 0 3px 3px 0 darkslategrey;
 }
-#tribute-info {
+#tribute-info, #tribute-link-container {
     color: white;
     text-align: center;    
-    margin-bottom: 50px;
+}
+#tribute-info {
+    margin-bottom: 75px;
 }
 #ti-title {
     font-family: 'Unica One', cursive;
     font-size: 30px;
-    margin: 50px 0;
+    margin: 50px 0 75px 0;
 }
 
 #info-list {
@@ -104,6 +106,23 @@ a {
     margin: 2em; 
 }
 
+#tribute-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+#circle {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+}
+#tribute-link-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
 /* ----- media queries ----- */
 @media only screen and (min-width: 1000px) {
     #image {
