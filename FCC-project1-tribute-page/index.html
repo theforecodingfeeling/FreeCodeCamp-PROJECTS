@@ -9,45 +9,73 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            <div id="main">
-                
-                <section id="visible-before-scroll">
-                    <div id="title-div">
-                        <h1 id="title">PowerShell</h1>
-                    </div>
-                    <div id="img-div">
-                        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png">
-                        <!-- <p id="img-caption">the PowerShell logo</p> -->
-                    </div>
-                    <div id="learn-more">
-                        <span id="lm-text">Learn more</span>
-                        <a href="#visible-after-scroll"><i class="icon-arrow-down-alt1" id="arrow-icon"></i></a>
-                    </div>
-                </section>
-            
-                <section id="visible-after-scroll">
-                    <div id="tribute-info">
-                        <h2 id="ti-title">A short history of PowerShell</h2>
-                        <ul id="info-list">
-                            <li class="list-item">PowerShell started out as and idea by Jeffrey Snover to integrate the previous CLI with scripting, making it capable of automating a wide range of administrative tasks. </li>
-                            <li class="list-item">In August 2002, the <em>Monad Manifesto</em> was published, introducing this idea. </li>
-                            <li class="list-item">In June 2005, Microsoft published the first public beta release. </li>
-                            <li class="list-item">Microsoft announced in April 2006 <em>Monad</em> was renamed <em>Windows PowerShell</em>.</li>
-                            <li class="list-item">Powershell v1 was released shortly after.</li>
-                            <li class="list-item">Powershell v2 was released in August 2009.</li>
-                            <li class="list-item">Microsoft announced it made Powershell open-source and cross-platform in August 2016.</li>
-                        </ul>
-                    </div>
-                    <div id="tribute-link-container">
-                        <span id="circle"></span>
-                        <span id="tribute-link-text">Want to know more? Click
-                            <a href="https://en.wikipedia.org/wiki/PowerShell" target="_blank">Here</a> </span>
-                    </div>
-                </section>
-            </div>
-            
-        </main>
         
+        <!-- HEADER AREA - FULL HEIGHT AND WIDTH OF VIEWPORT -->
+        <header id="visible-before-scroll">
+            <div id="title-div">
+                <h1 id="title">PowerShell</h1>
+            </div>
+            <div id="img-div">
+                <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png">
+                <p id="img-caption">the PowerShell logo</p>
+            </div>
+            <div id="learn-more">
+                <span id="lm-text">Learn more</span>
+                <a href="#main"><i class="icon-arrow-down-alt1" id="arrow-icon"></i></a>
+            </div>
+        </header>
+        
+        <!-- MAIN AREA -->
+        <main  id="main"> 
+            <div id="tribute-info">
+                <h2 id="ti-title">A short history of PowerShell</h2>
+                <ul id="info-list">
+                    <li class="list-item">PowerShell started out as and idea by Jeffrey Snover to integrate the previous CLI with scripting, making it capable of automating a wide range of administrative tasks. </li>
+                    <li class="list-item">In August 2002, the <em>Monad Manifesto</em> was published, introducing this idea. </li>
+                    <li class="list-item">In June 2005, Microsoft published the first public beta release. </li>
+                    <li class="list-item">Microsoft announced in April 2006 <em>Monad</em> was renamed <em>Windows PowerShell</em>.</li>
+                    <li class="list-item">Powershell v1 was released shortly after.</li>
+                    <li class="list-item">Powershell v2 was released in August 2009.</li>
+                    <li class="list-item">Microsoft announced it made Powershell open-source and cross-platform in August 2016.</li>
+                </ul>
+            </div>
+            <div id="tribute-link-container">
+                <span id="circle"></span>
+                <span id="tribute-link-text">Want to know more? Click
+                    <a href="https://en.wikipedia.org/wiki/PowerShell" target="_blank" id="tribute-link">Here</a> </span>
+            </div>
+        </main>
+            
+        <!-- FOOTER AREA -->
+        <footer id="footer">
+            <div id="footer-text">
+                <span>Made by</span> 
+                <a href="https://github.com/theforecodingfeeling" target="_blank">
+                    <img src="https://en.gravatar.com/userimage/166655706/613b8a865dbbb6cdb6cda07cdb00a78c.png?size=200" id="avatar">
+                </a> 
+            </div>
+            <div id="footer-links">
+                <div class="link-containers">
+                    <a href="https://twitter.com/theforecodingf1" target="_blank">
+                        <i class="icon-twitter social-media-icons"></i>
+                    </a>
+                    <span class="social-media-handles">@forecodingf1</span>
+                </div>
+                <div class="link-containers">
+                    <a href="https://www.instagram.com/theforecodingfeeling/" target="_blank">
+                        <i class="icon-instagram social-media-icons"></i>
+                    </a>
+                    <span class="social-media-handles">@forecodingfeeling</span>
+                </div>
+                <div class="link-containers">
+                    <a href="https://theforecodingfeeling.github.io/" target="_blank">
+                        <i class="icon-github social-media-icons"></i>
+                    </a>
+                    <span class="social-media-handles">Dev Journal</span>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

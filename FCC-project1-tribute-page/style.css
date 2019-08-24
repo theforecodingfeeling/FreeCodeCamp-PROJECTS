@@ -13,7 +13,7 @@ body, html {
 #visible-before-scroll {
     width: 100%;
     height: 99vh; max-height: 100%;
-    margin-bottom:75px;
+    margin-bottom:4.7em;
     padding: 0;
 }
 
@@ -30,7 +30,7 @@ body, html {
 }
 #title {
     font-family: 'Unica One', cursive;
-    font-size: 75px;
+    font-size: 4.5em;
     font-weight: bold;
     text-shadow: -1px -1px 1px grey, 1px 1px 1px rgba(0,0,0,.5);
 }
@@ -45,8 +45,10 @@ body, html {
 }
 #img-caption {
     font-family: 'Roboto Slab', serif;
-    font-size: 13px;
+    font-size: 0.7em;
     font-style: italic;
+    position: relative;
+    bottom: 2em;
 }
 
 
@@ -65,7 +67,7 @@ a {
     text-decoration: none;
 }
 #arrow-icon {
-    font-size: 30px;
+    font-size: 2em;
     color: #000000; 
     /* position: absolute;
     bottom: 60px;
@@ -74,11 +76,11 @@ a {
 }
 
 
-/* ----- visible-upon-scrol-area content ----- */
-#visible-after-scroll {
+/* ----- visible-upon-scroll-area content ----- */
+main {
     width: 100%;
-    margin: 50px 0;
-    padding: 25px 0;
+    margin: 2.5em 0;
+    padding: 1.5em 0;
     background-color: black;
     box-sizing: border-box;
     box-shadow: 0 -3px 3px 0 darkslategrey, 0 3px 3px 0 darkslategrey;
@@ -88,12 +90,12 @@ a {
     text-align: center;    
 }
 #tribute-info {
-    margin-bottom: 75px;
+    margin-bottom: 4em;
 }
 #ti-title {
     font-family: 'Unica One', cursive;
-    font-size: 30px;
-    margin: 50px 0 75px 0;
+    font-size: 2em;
+    margin: 2.5em 0 2.5em 0;
 }
 
 #info-list {
@@ -104,12 +106,13 @@ a {
 .list-item {
     line-height: 1.5em;
     margin: 2em; 
+    font-size: 0.9em;
 }
 
 #tribute-link-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 2em;
 }
 #circle {
     background-color: white;
@@ -121,8 +124,55 @@ a {
 }
 #tribute-link-text {
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 1em;
 }
+
+
+
+
+/* ----- FOOTER ----- */
+#footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Unica One', cursive;
+    font-size: 1.5em;
+}
+#footer-text > span {
+    margin: 1em 0; 
+}
+#avatar {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.link-containers {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+.link-containers > a {
+    margin-bottom: 0.5em
+}
+.social-media-icons {
+    font-size: 1.75em;
+    color: black;
+    text-shadow: 2px 2px 3px darkblue;
+}
+
 /* ----- media queries ----- */
 @media only screen and (min-width: 1000px) {
     #image {
@@ -134,11 +184,11 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('./fonts/icomoon.eot?2rvb7h');
-  src:  url('./fonts/icomoon.eot?2rvb7h#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.ttf?2rvb7h') format('truetype'),
-    url('./fonts/icomoon.woff?2rvb7h') format('woff'),
-    url('./fonts/icomoon.svg?2rvb7h#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?a2bvu5');
+  src:  url('fonts/icomoon.eot?a2bvu5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a2bvu5') format('truetype'),
+    url('fonts/icomoon.woff?a2bvu5') format('woff'),
+    url('fonts/icomoon.svg?a2bvu5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -160,4 +210,13 @@ a {
 
 .icon-arrow-down-alt1:before {
   content: "\e900";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
 }
